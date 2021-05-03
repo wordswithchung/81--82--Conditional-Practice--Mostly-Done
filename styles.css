@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 300px;
+}
+
+input {
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    font-size: 15px;
+}
+
+button {
+    width: 80px;
+    height: 50px;
+    background-color: #4381c1;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.welcome-message {
+    color: #e63946;
+    font-size: 80px;
+    text-align: center;
+}
