@@ -14,11 +14,11 @@ $(".password").hide();
 $(".welcome-message").hide();
 
 $(".button").click(function() {
-    let userName = $(".username").val();
+    const userName = $(".username").val();
+    
+    const isValidUserName = ["Spider Man", "Iron Man", "Black Widow", "Thor", "Black Panther"].includes(userName);
 
-    if (userName === "Spider Man") {
-        $(".password").show();
-    } else if (userName === "Thor") {
+    if (isValidUserName) {
         $(".password").show();
     } else {
         alert("Not a valid Marvel hero; get out of here!");
@@ -33,5 +33,7 @@ $(".button").click(function() {
         $(".button").hide();
         $(".welcome-message").text("Welcome back, " + userName + "!");
         $(".welcome-message").show();
+    } else {
+        alert("Not a valid Marvel hero password; get out of here!");
     }
 });
