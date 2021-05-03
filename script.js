@@ -22,6 +22,7 @@ $(".button").click(function() {
         $(".password").show();
     } else {
         alert("Not a valid Marvel hero; get out of here!");
+        return;
     }
 
     let password = $(".password").val();
@@ -35,5 +36,6 @@ $(".button").click(function() {
         $(".welcome-message").show();
     } else {
         alert("Not a valid Marvel hero password; get out of here!");
+        return;
     }
 });
